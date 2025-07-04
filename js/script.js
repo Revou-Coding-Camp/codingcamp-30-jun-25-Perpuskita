@@ -20,7 +20,9 @@ function get_nama(){
 // Email Formatting 
 
 function email_alert(condition) {
-
+    
+    // console.log(condition)
+    
     if (condition) {
         document.getElementById('EmailAlert').textContent = " "
     } else{
@@ -37,9 +39,10 @@ function email_formating(email){
 document.querySelector('input[type="email"][id="email"]').addEventListener('input', function(event) {
     //console.log('Final value:', event.target.value);
     
-    if (event.target.value !== "") {
+    if (event.target.value == null || event.target.value == "") {
         
         email_alert(true)
+        console.log("he;")
         
     } else {
         
