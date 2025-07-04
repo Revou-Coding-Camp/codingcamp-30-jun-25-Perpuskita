@@ -44,6 +44,7 @@ document.querySelector('input[type="email"][id="email"]').addEventListener('inpu
         email_alert(true)
         console.log("he;")
         
+        
     } else {
         
         condition = email_formating(event.target.value)
